@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hdd-styles.css">
+</head>
+<body class="dashboard-escalon" id="dashboard">
+<div class="main-container">
+    <div class="emergencia">
+        <div class="table-container">
+            <div class="head-action-bar d-flex justify-content-between">
+                <p  class="ttl-table">Emergencia</p>
+                <div class="d-flex justify-content-between gap-2">
+                    <img src="/src/images/logo-hdd.png" alt="Hospital de Diagnostico Escalon" class="logo">
+                    <a href="#" onclick="openFullscreen()" class="d-flex align-items-center" id="ico-fullscreen-open"><i class="ico-fullscreen"></i></a>
+                    <a href="#" onclick="closeFullscreen()" class="d-flex align-items-center d-none" id="ico-fullscreen-close"><i class="ico-fullscreen-close"></i></a>
+                </div>
+            </div>
+            <table width="100%" celpadding="0" cellspacing="0" class="table-rooms">
+                <thead>
+                    <tr>
+                        <td width="20%" class="rounded-tl-10">&nbsp;</td>
+                        <td width="10%" class="text-center">Fecha</td>
+                        <td width="10%" class="text-center">Inicio</td>
+                        <td width="10%" class="text-center">DD:HH:MI</td>
+                        <td width="50%" class="rounded-tr-10 text-center">Paciente</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maxima / Aislado</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 1</td>
+                        <td class="text-center bg-light-yellow">23/09/22</td>
+                        <td class="text-center bg-light-yellow">10:25</td>
+                        <td class="text-center bg-light-yellow">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 2</td>
+                        <td class="text-center bg-light-yellow">23/09/22</td>
+                        <td class="text-center bg-light-yellow">10:25</td>
+                        <td class="text-center bg-light-yellow">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 3</td>
+                        <td class="text-center bg-light-green">23/09/22</td>
+                        <td class="text-center bg-light-green">10:25</td>
+                        <td class="text-center bg-light-green">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 5</td>
+                        <td class="text-center bg-light-green">23/09/22</td>
+                        <td class="text-center bg-light-green">10:25</td>
+                        <td class="text-center bg-light-green">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 6</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Maxima 1</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Maxima 2</td>
+                        <td class="text-center bg-light-blue">23/09/22</td>
+                        <td class="text-center bg-light-blue">10:25</td>
+                        <td class="text-center bg-light-blue">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cirugia Menor</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 7</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 8</td>
+                        <td class="text-center bg-light-blue">23/09/22</td>
+                        <td class="text-center bg-light-blue">10:25</td>
+                        <td class="text-center bg-light-blue">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 9</td>
+                        <td class="text-center bg-light-blue">23/09/22</td>
+                        <td class="text-center bg-light-blue">10:25</td>
+                        <td class="text-center bg-light-blue">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 10</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 11</td>
+                        <td class="text-center bg-light-yellow">23/09/22</td>
+                        <td class="text-center bg-light-yellow">10:25</td>
+                        <td class="text-center bg-light-yellow">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 12</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 14</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 15</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 16</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Cubículo 17</td>
+                        <td class="text-center bg-light-blue">23/09/22</td>
+                        <td class="text-center bg-light-blue">10:25</td>
+                        <td class="text-center bg-light-blue">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Hab/Cub. 216</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Hab/Cub. 217</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Hab/Cub. 218</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Hab/Cub. 223</td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                    <tr>
+                        <td>Hab/Cub. 224 </td>
+                        <td class="text-center">23/09/22</td>
+                        <td class="text-center">10:25</td>
+                        <td class="text-center">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="rounded-b-10 pt-2" colspan="5"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="emergencia-2">
+        <div class="table-container">
+            <div class="head-action-bar d-flex justify-content-between">
+                <p  class="ttl-table">Emergencia 2</p>
+            </div>
+            <table width="100%" celpadding="0" cellspacing="0" class="table-rooms">
+                <thead>
+                    <tr>
+                        <td width="20%" class="rounded-tl-10">&nbsp;</td>
+                        <td width="10%" class="text-center">Fecha</td>
+                        <td width="10%" class="text-center">Inicio</td>
+                        <td width="10%" class="text-center">DD:HH:MI</td>
+                        <td width="50%" class="rounded-tr-10 text-center">Paciente</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maxima / Aislado</td>
+                        <td class="text-center bg-light-red">23/09/22</td>
+                        <td class="text-center bg-light-red">10:25</td>
+                        <td class="text-center bg-light-red">00:03:17</td>
+                        <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="rounded-b-10 pt-2" colspan="5"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="sala-espera">
+        <div class="row">
+            <div class="col-6">
+                <div class="table-container">
+                    <div class="head-action-bar d-flex justify-content-between">
+                        <p  class="ttl-table">Sala de espera</p>
+                    </div>
+                    <table width="100%" celpadding="0" cellspacing="0" class="table-rooms">
+                        <thead>
+                            <tr>
+                                <td width="10%" class="rounded-tl-10 text-center">Inicio</td>
+                                <td width="10%" class="text-center">DD:HH:MI</td>
+                                <td width="50%" class="rounded-tr-10 text-center">Paciente</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">10:25</td>
+                                <td class="text-center">00:03:17</td>
+                                <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="rounded-b-10 pt-2" colspan="5"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="table-container">
+                    <div class="head-action-bar d-flex justify-content-between">
+                        <p  class="ttl-table">Sala de espera Express</p>
+                    </div>
+                    <table width="100%" celpadding="0" cellspacing="0" class="table-rooms">
+                        <thead>
+                            <tr>
+                                <td width="10%" class="rounded-tl-10 text-center">Inicio</td>
+                                <td width="10%" class="text-center">DD:HH:MI</td>
+                                <td width="50%" class="rounded-tr-10 text-center">Paciente</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">10:25</td>
+                                <td class="text-center">00:03:17</td>
+                                <td class="text-center">Juan Jose Lopez Castro //  Aseguradora vivir </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="rounded-b-10 pt-2" colspan="5"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var elem = document.getElementById("dashboard");
+        var openFull = document.getElementById("ico-fullscreen-open");
+        var closeFull = document.getElementById("ico-fullscreen-close");
+
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+          }
+          openFull.classList.add("d-none");
+          closeFull.classList.remove("d-none");
+        }
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+            closeFull.classList.add("d-none");
+            openFull.classList.remove("d-none");
+        }
+    </script>
+</body>
+
+</html>
